@@ -11,5 +11,5 @@ for prefix in "${valid_prefixes[@]}"; do
 done
 
 # 使用 ANSI escape codes 來設置紅色文本
-echo -e "\033[31mWarning: Branch name must start with one of the following prefixes:\033[0m ${valid_prefixes[*]}"
+echo "\033[31mWarning: Branch name must start with one of the following prefixes:\033[0m ${valid_prefixes[*]}"
 exit 0
