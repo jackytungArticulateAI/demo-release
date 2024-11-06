@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-cli": "^5.0.0"
+  }
+}
