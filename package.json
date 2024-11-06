@@ -1,0 +1,15 @@
+{
+  "name": "demo-release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-cli": "^5.0.0"
+  }
+}
