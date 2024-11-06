@@ -1,0 +1,14 @@
+# .github/labeler.yml
+
+# 根據 commit message 的內容自動添加標籤
+bug:
+  - commit-message:
+      - "fix"
+
+enhancement:
+  - commit-message:
+      - "feat"
+
+documentation:
+  - commit-message:
+      - "docs"
