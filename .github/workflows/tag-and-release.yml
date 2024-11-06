@@ -1,12 +1,14 @@
 name: Tag and Release
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches:
       - main
 
 jobs:
   create-tag-and-release:
+    if: startsWith(github.head_ref, 'release-')
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +18,7 @@ jobs:
       - name: Get previous tag
         id: get_previous_tag
         run: |
-          PREVIOUS_TAG=$(git describe --tags --abbrev=0)
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 || echo "none")
           echo "Previous tag: $PREVIOUS_TAG"
           echo "::set-output name=previous_tag::$PREVIOUS_TAG"
 
