@@ -7,15 +7,17 @@ The goal of automating release notes is to reduce manual effort and minimize the
 
 ### 1. Branch Naming Convention
 Follow a specific naming convention when creating branches to keep code organized. Valid branch types include:
-- `feature/`: New features
-- `fix/`: Bug fixes
-- `hotfix/`: Urgent changes
-- `prerelease/`: Pre-release versions
-- `release/`: Final versions
+- `feature*`: New features
+- `fix*`: Bug fixes
+- `hotfix*`: Urgent changes
+- `prerelease*`: Pre-release versions
+- `release*`: Final versions
 
 **Examples:**
 - `feature/hub-improvement`
 - `fix/law-login`
+- `prerelease-0.17`
+- `feature-law-login`
 
 ### 2. Labeling Pull Requests
 Once the branch is named correctly, use GitHub Actions to automatically label each pull request (PR) by creating an `auto-label.yml` workflow.
