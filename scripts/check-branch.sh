@@ -10,7 +10,6 @@ for prefix in "${valid_prefixes[@]}"; do
     fi
 done
 
-# 使用 ANSI escape codes 來設置紅色文本
 echo "Warning: Branch name must start with one of the following prefixes: ${valid_prefixes[*]}"
 echo "Descriptions:"
 echo "feature: is for adding, refactoring or removing a feature"
