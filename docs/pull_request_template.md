@@ -16,6 +16,7 @@
 
 - Test case 1: <!-- describe what you tested, with screenshots or videos better -->
 - Test case 2: <!-- describe what you tested, with screenshots or videos better -->
+- Test case 3: <!-- describe what you tested, with screenshots or videos better -->
 
 ## Reviewers
 
