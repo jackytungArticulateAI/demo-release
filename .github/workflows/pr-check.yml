@@ -3,12 +3,12 @@ name: PR Check
 on:
   pull_request:
     types: [opened, edited, synchronize]
-    branches-ignore:
-      - 'release*'
-      - 'prerelease*'
 
 jobs:
   check-pr-description:
+    if: |
+      !startsWith(github.head_ref, 'release-') &&
+      !startsWith(github.head_ref, 'prerelease-')
     runs-on: ubuntu-latest
     steps:
       - name: Check PR description for required fields
