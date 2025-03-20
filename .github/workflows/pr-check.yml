@@ -4,8 +4,8 @@ on:
   pull_request:
     types: [opened, edited, synchronize]
     branches-ignore:
-      - release-*
-      - prerelease-*
+      - release*
+      - prerelease*
 
 jobs:
   check-pr-description:
